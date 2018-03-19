@@ -1,0 +1,84 @@
+<head>
+  <title>publisher</title>
+</head>
+
+<body>
+  <div class="container">
+    {{> buytoken}}
+  </div>
+
+  
+</body>
+
+
+<template name="buytoken">
+  <div class="two-columns">
+    <div class="left-columns">
+      <div class="section">
+        <h2 class="title">
+          Step 1: You Ethereum Wallet
+        </h2>
+        <div class="paragraph">
+          <span>In order to recieve IQON tokens you need to give your Ethereum Wallet Adress.</span>
+        </div>
+        <h4><strong>
+          Important
+        </strong></h4>
+        <div class="paragraph">
+          <span>We are not able to send tokens to Exchange Ethereum wallets.</span>
+        </div>
+        <div class="address_container">
+          <div for="address" class="input-label">Ethereum Address</div>
+          <input type="text" size="42" name="address" id="address" class="add_input">
+        </div>
+        <button type="button" class="saved" id="saved">
+          <span>Save</span>
+        </button>
+      </div>
+
+      <div class="section hidden" id="step2">
+        <h2 class="title">
+          Step 2: Make a payment
+        </h2>
+        <div class="line"></div>
+        <div class="paragraph">
+          <span>Send funds to this Ethereum address:</span>
+          <div class="textword-break">0xeE494111d5f2a9c4f55f3533C8FEBACA7654D3E7</div>
+        </div>
+        <div class="line"></div>
+        <div class="paragraph">
+          <span>After your payment will be completed you will get tokens to the selected ethereum address:</span>
+          <div id="usr_addr"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="right-columns">
+      <div class="section wallet">
+        <h3 class="balance-title">
+          <span>Your Wallet Balance</span>
+        </h3>
+        <p class="balance">
+          0
+          <span>IQON</span>
+        </p>
+      </div>
+
+      <div class="section token-price">
+        <h3 class="right-title">Token Price</h3>
+        <p>
+          1 IQON = 
+          <span class="badge">0.06</span>
+          <span>USD</span>
+        </p>
+
+        <!-- <div class="line"></div>
+        <h3 class="right-title">Tokens Sold</h3>
+        <div id="sold-bar"></div> -->
+      </div>
+
+    </div>
+  </div>
+  
+  
+</template>
